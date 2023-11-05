@@ -1,0 +1,307 @@
+header {
+  margin: 0 auto;
+  height: 1035px;
+  flex-shrink: 0;
+  align-self: stretch;
+  background: #fafafa;
+  position: relative;
+}
+
+header .navbar {
+  max-width: 1440px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 11px 197px 11px 195px;
+  justify-content: center;
+  align-items: center;
+  gap: 446px;
+  z-index: 100;
+  background-color: transparent;
+  color: #000;
+}
+header .navbar__{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 11px 50px 11px 50px;
+  justify-content: center;
+  align-items: center;
+
+}
+header .navbar__ .navbar-toggler-icon{
+  display: none;
+}
+header .navbar .navbar-nav {
+  display: flex;
+  height: 24px;
+  padding: 0px 27px 0px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-direction: row;
+}
+
+/* #navbar-responsive {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  transition: 0.5s;
+} */
+
+/* header .navbar {
+  max-width: 1440px;
+  position: fixed;
+} */
+
+.navbar-nav .nav-item {
+  list-style: none;
+}
+
+.nav-item .nav-link {
+  color: var(--second-text-color);
+  text-align: center;
+  text-decoration: none;
+  /* link */
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 171.429% */
+  letter-spacing: 0.2px;
+}
+
+.nav-link.active {
+  color: #000;
+}
+
+header .navbar .navbar-brand {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 133.333% */
+  letter-spacing: 0.1px;
+}
+
+header .header-container {
+  height: 710px;
+  margin: 0 auto;
+  flex-shrink: 0;
+  background: url("../assets/image/cover.png") lightgray 100% / cover no-repeat;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-left: 150px;
+  padding-right: 167px;
+}
+
+.header-container .header-main {
+  display: flex;
+  width: 1046px;
+  height: 710px;
+  padding: 80px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.header-row {
+  width: 1046px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.header-row .col-md-6:nth-child(1) {
+  display: flex;
+  width: 509px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.header-row .col-md-6:nth-child(1) h1 {
+  color: var(--text-color, #252b42);
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px;
+  /* 137.931% */
+  letter-spacing: 0.2px;
+}
+.header-row .col-md-6:nth-child(1) h4 {
+  color: var(--second-text-color, #737373);
+
+  /* h4 */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 150% */
+  letter-spacing: 0.2px;
+}
+.header-row .col-md-6:nth-child(1) .block-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.header-row .col-md-6:nth-child(1) .block-btns .get-quote {
+  display: flex;
+  padding: 10px 36px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--light-text-color, #fff);
+  text-align: center;
+  /* btn-text */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  /* 200% */
+  letter-spacing: 0.2px;
+  border-radius: 37px;
+  background: var(--primary-color);
+}
+
+.header-row .col-md-6:nth-child(1) .block-btns .learn-more {
+  display: flex;
+  padding: 10px 36px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--light-text-color, #fff);
+  text-align: center;
+
+  /* btn-text */
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  /* 200% */
+  letter-spacing: 0.2px;
+  border-radius: 37px;
+  background: var(--secondary-color-1);
+}
+
+.header-row .col-md-6:nth-child(2) {
+  display: flex;
+  width: 510px;
+  height: 280px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-block {
+  justify-content: space-between;
+  margin-top: 80px;
+  gap: 35px;
+}
+
+.header-row .header-card {
+  transition: all 0.3s linear;
+  display: flex;
+  width: 250px;
+  gap: 20px;
+  padding: 35px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff;
+  /* SHADOW */
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+}
+
+.header-row .header-card h3 {
+  color: var(--text-color, #252b42);
+  /* h3 */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 133.333% */
+  letter-spacing: 0.1px;
+}
+
+.header-row .header-card p {
+  color: var(--second-text-color, #737373);
+
+  /* paragraph */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.header-row .header-card:last-child {
+  background-color: var(--secondary-color-1);
+}
+.header-row .header-card:last-child h3 {
+  color: var(--light-text-color, #fff);
+}
+.header-row .header-card:last-child h3 + p {
+  color: var(--light-text-color, #fff);
+}
+
+.header-row .header-card:hover {
+  transform: scale(1.1);
+}
+.header-container .get-quote:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+}
+.header-container .learn-more:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+}
+header .navbar .navbar-toggler-icon{
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  header .navbar {
+    padding: 11px 50px 20px 50px;
+    justify-content: flex-start;
+    height:auto;
+    flex-direction: column;
+    gap:30px;
+    transition: height .5s linear;
+  }
+  header .navbar__{
+    justify-content: space-between;
+    width: 100%;
+  }
+  header .navbar .navbar-toggler-icon{
+    display: block;
+  }
+  header .navbar .navbar-nav {
+    background-color: #fafafa;
+    display: none;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    transition: all 0.5s linear;
+
+  }
+  header .navbar .navbar-nav.nav-open{
+    display: flex;
+  }
+}
