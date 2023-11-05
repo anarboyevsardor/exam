@@ -9,6 +9,7 @@ header {
 
 header .navbar {
   max-width: 1440px;
+  min-width:416px;;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -276,7 +277,7 @@ header .header-container {
 header .navbar .navbar-toggler-icon{
   display: none;
 }
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 416px) {
   header .navbar {
     padding: 11px 50px 20px 50px;
     justify-content: flex-start;
