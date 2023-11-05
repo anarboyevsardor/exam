@@ -9,7 +9,6 @@ header {
 
 header .navbar {
   max-width: 1440px;
-  min-width:416px;;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -22,16 +21,15 @@ header .navbar {
   background-color: transparent;
   color: #000;
 }
-header .navbar__{
+header .navbar__ {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 11px 50px 11px 50px;
   justify-content: center;
   align-items: center;
-
 }
-header .navbar__ .navbar-toggler-icon{
+header .navbar__ .navbar-toggler-icon {
   display: none;
 }
 header .navbar .navbar-nav {
@@ -274,23 +272,23 @@ header .header-container {
   transition: all 0.3s linear;
   transform: scale(1.1);
 }
-header .navbar .navbar-toggler-icon{
+header .navbar .navbar-toggler-icon {
   display: none;
 }
-@media screen and (min-width: 416px) {
+@media screen and (max-width: 416px) {
   header .navbar {
-    padding: 11px 50px 20px 50px;
+    padding: 11px 50px 20px 45px;
     justify-content: flex-start;
-    height:auto;
+    height: auto;
     flex-direction: column;
-    gap:30px;
-    transition: height .5s linear;
+    gap: 30px;
+    transition: height 0.5s linear;
   }
-  header .navbar__{
+  header .navbar__ {
     justify-content: space-between;
     width: 100%;
   }
-  header .navbar .navbar-toggler-icon{
+  header .navbar .navbar-toggler-icon {
     display: block;
   }
   header .navbar .navbar-nav {
@@ -300,9 +298,8 @@ header .navbar .navbar-toggler-icon{
     height: auto;
     width: 100%;
     transition: all 0.5s linear;
-
   }
-  header .navbar .navbar-nav.nav-open{
+  header .navbar .navbar-nav.nav-open {
     display: flex;
   }
 }
